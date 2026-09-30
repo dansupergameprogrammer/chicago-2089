@@ -2060,13 +2060,13 @@ html.lp .ladder,html.lp .terms{font-size:1.304rem}
 
 
   <h2>Decks</h2>
-  <p class="note">A deck is a weapon that runs on your neural interface. Attack with Knowledge against the target's Difficulty or Evasion, within Close, no line of sight needed. On a hit, deal its damage (direct: no Armor Slots), pay to run one slotted <strong>load</strong> (Section C), or both. Neural targets only: chrome, devices, drones. A pure human has nothing for it to hit.</p>
+  <p class="note">A deck is a weapon that runs on your neural interface. Attack with Knowledge against the target's Difficulty or Evasion, within Close, no line of sight needed. On a hit, deal its damage (direct: no Armor Slots), pay to run one slotted <strong>load</strong> (Section C), or both. The damage is always your choice, and a load you run without it doesn&rsquo;t end Hidden. Neural targets only: chrome, devices, drones. A pure human has nothing for it to hit.</p>
   <div class="tblwrap"><table>
     <tr class="hdr"><th>Name</th><th>Trait</th><th>Range</th><th>Damage</th><th>Loads</th><th>Feature</th><th>Tier</th></tr>
     <tr><td class="name" data-label="Name">Scrap Deck</td><td data-label="Trait">Knowledge</td><td data-label="Range">Close</td><td data-label="Damage">d6 direct</td><td class="center" data-label="Loads">2</td><td data-label="Feature"><strong>Neural.</strong> Somebody else's interface, re-tuned. Hot to the touch.</td><td data-label="Tier"><span class="tier t1">Tier 1</span></td></tr>
     <tr><td class="name" data-label="Name">Standard Deck</td><td data-label="Trait">Knowledge</td><td data-label="Range">Close</td><td data-label="Damage">d6+1 / +4 / +7 / +10 direct</td><td class="center" data-label="Loads">3 / 3 / 4 / 5</td><td data-label="Feature"><strong>Neural.</strong> Free for a Hacker at character creation. Every tier of it is the same deck, built better.</td><td class="center" data-label="Tier">1 &ndash; 4</td></tr>
     <tr><td class="name" data-label="Name">Corporate Deck</td><td data-label="Trait">Knowledge</td><td data-label="Range">Close</td><td data-label="Damage">d6+4 direct</td><td class="center" data-label="Loads">4</td><td data-label="Feature"><strong>Neural.</strong> One more load slot than a Standard Deck of its tier. Corp issue: licensed, logged, and it phones home, so the GM can spend a Fear to make that matter. What the other side carries; a runner takes one off a body.</td><td data-label="Tier"><span class="tier t2">Tier 2</span></td></tr>
-    <tr><td class="name" data-label="Name">Whisper Deck</td><td data-label="Trait">Knowledge</td><td data-label="Range">Close</td><td data-label="Damage">d6+3 direct</td><td class="center" data-label="Loads">3</td><td data-label="Feature"><strong>Neural.</strong> <strong>Silent Running:</strong> a hit that deals no damage doesn&rsquo;t end Hidden. Built for runners who are never in the room.</td><td data-label="Tier"><span class="tier t2">Tier 2</span></td></tr>
+    <tr><td class="name" data-label="Name">Whisper Deck</td><td data-label="Trait">Knowledge</td><td data-label="Range">Close</td><td data-label="Damage">d6+3 direct</td><td class="center" data-label="Loads">3</td><td data-label="Feature"><strong>Neural.</strong> <strong>Silent Running:</strong> landing a quickhack doesn&rsquo;t end Hidden, even when it deals damage. Built for runners who are never in the room.</td><td data-label="Tier"><span class="tier t2">Tier 2</span></td></tr>
     <tr><td class="name" data-label="Name">Overclock Deck</td><td data-label="Trait">Knowledge</td><td data-label="Range">Close</td><td data-label="Damage">d6+4 direct</td><td class="center" data-label="Loads">3</td><td data-label="Feature"><strong>Neural.</strong> <strong>Overclock:</strong> before you attack, mark a Stress to roll a d10 as your damage die. It runs hot enough to feel through the jack.</td><td data-label="Tier"><span class="tier t2">Tier 2</span></td></tr>
     <tr><td class="name" data-label="Name">Military Deck</td><td data-label="Trait">Knowledge</td><td data-label="Range">Close</td><td data-label="Damage">d6+6 direct</td><td class="center" data-label="Loads">4</td><td data-label="Feature"><strong>Neural. Reliable:</strong> +1 to attack rolls. Provenance is a problem.</td><td data-label="Tier"><span class="tier t3">Tier 3</span></td></tr>
     <tr><td class="name" data-label="Name">Longline Deck</td><td data-label="Trait">Knowledge</td><td data-label="Range">Far</td><td data-label="Damage">d6+6 direct</td><td class="center" data-label="Loads">4</td><td data-label="Feature"><strong>Neural.</strong> <strong>Reach:</strong> a directional antenna the length of your forearm. Its range is Far instead of Close.</td><td data-label="Tier"><span class="tier t3">Tier 3</span></td></tr>
@@ -2544,7 +2544,8 @@ html.lp .ladder,html.lp .terms{font-size:1.304rem}
   <strong>load</strong> slots. A load is a one-word program you keep
   slotted. Swap loads during any rest. When you hit with the deck,
   deal its damage, run one slotted load by paying its cost, or
-  both.</p>
+  both. The damage is always your choice. Run a load without it and
+  you stay Hidden.</p>
 
   <p><strong>Hope is your RAM.</strong> Most loads spend it, and it
   comes back as you roll.</p>
@@ -2574,7 +2575,7 @@ html.lp .ladder,html.lp .terms{font-size:1.304rem}
   <ol>
     <li><strong>Name the target.</strong> A person's chrome, a device, a drone, a door. Neural loads need an augmented target. A pure human can't be quickhacked; the devices they carry can.</li>
     <li><strong>Attack with the deck.</strong> Roll Knowledge against the target's Difficulty or Evasion, like any attack. A device uses its own Difficulty: a cheap camera is 12, a door is its tier (12 / 15 / 18 / 21), a drone has one on its stat block. A <strong>Firewall</strong> makes a target 2 harder. A Militech operator is as hard to Freeze as to shoot.</li>
-    <li><strong>On a hit,</strong> choose: deal the deck's damage (direct: no Armor Slots), pay a load's cost to run it, or both. Read the dice like any roll: with Fear, the GM makes a move. A scanner pings, a witness turns, an augment logs the attempt.</li>
+    <li><strong>On a hit,</strong> choose: deal the deck's damage (direct: no Armor Slots), pay a load's cost to run it, or both. You never have to deal the damage, and a load run without it doesn't end Hidden. Read the dice like any roll: with Fear, the GM makes a move. A scanner pings, a witness turns, an augment logs the attempt.</li>
   </ol>
 
   <p>Temporary conditions clear the way Section R says: an action roll,
